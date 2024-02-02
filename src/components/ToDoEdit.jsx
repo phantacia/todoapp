@@ -29,11 +29,11 @@ const ToDoEdit = ({ editTodo, todo }) => {
         placeholder="Update #TODO"
         value={input}
         onChange={handleChange}
-        className="grow bg-gray-200 rounded-md flex justify-start p-5 font-poppins text-md"
+        className="flex-grow bg-gray-200 rounded-xl flex justify-start p-4 font-poppins text-md w-3/4"
       />
       <button
         type="submit"
-        className="grow bg-slate-500 rounded-md flex justify-center items-center font-poppins text-md text-white p-5"
+        className="flex-grow bg-slate-500 rounded-xl flex justify-center items-center font-poppins text-md text-white w-1/4"
       >
         Update
       </button>

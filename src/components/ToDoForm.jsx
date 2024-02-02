@@ -15,17 +15,17 @@ const ToDoForm = ({ addTodo }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex w-[90%] gap-5">
+    <form onSubmit={handleSubmit} className="flex w-full md:w-[90%] gap-5">
       <input
         type="text"
         placeholder="Add #TODO"
         value={input}
         onChange={handleChange}
-        className="grow bg-gray-200 rounded-md flex justify-start p-5 font-poppins text-md"
+        className="flex-grow bg-gray-200 rounded-xl flex justify-start p-4 font-poppins text-md w-3/4"
       />
       <button
         type="submit"
-        className="grow bg-black rounded-md flex justify-center items-center font-poppins text-md text-white p-5"
+        className="flex-grow bg-accent rounded-xl flex justify-center items-center font-poppins text-md text-white w-1/4"
       >
         Enter
       </button>

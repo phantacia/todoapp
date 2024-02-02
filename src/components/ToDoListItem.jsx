@@ -4,7 +4,7 @@ import { MdDelete, MdEdit } from "react-icons/md";
 const ToDoListItem = ({ todo, toggleComplete, deleteTodo, editTodo }) => {
   return (
     <li>
-      <div className="lg:w-[600px] w-full flex items-center p-3 gap-5 font-poppins font-md border-b-2 border-dashed border-black">
+      <div className="w-full flex items-center p-3 gap-5 font-poppins font-md border-b-2 border-secondary">
         <p
           onClick={() => toggleComplete(todo.id)}
           className={`flex-auto ${todo.checked ? "line-through" : ""}`}
@@ -14,10 +14,10 @@ const ToDoListItem = ({ todo, toggleComplete, deleteTodo, editTodo }) => {
 
         <div className="flex gap-2 items-center">
           <button onClick={() => deleteTodo(todo.id)}>
-            <MdDelete />
+            <MdDelete className="bg-red-500 rounded-md p-1 text-white text-3xl" />
           </button>
           <button onClick={() => editTodo(todo.id)}>
-            <MdEdit />
+            <MdEdit className="bg-accent rounded-md p-1 text-white text-3xl" />
           </button>
         </div>
       </div>

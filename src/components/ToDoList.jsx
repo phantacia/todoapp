@@ -32,7 +32,7 @@ const ToDoList = ({ todos, setTodos }) => {
   };
 
   return (
-    <ul>
+    <ul className="w-full md:w-[90%]">
       {todos.map((todo, index) =>
         editingTodoId === todo.id ? (
           <ToDoEdit key={index} editTodo={editTask} todo={todo} />

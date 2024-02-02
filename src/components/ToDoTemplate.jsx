@@ -23,13 +23,15 @@ const ToDoTemplate = () => {
   };
 
   return (
-    <div className="w-[50%] pb-10 bg-white rounded-md shadow-md overflow-hidden flex flex-col gap-10 items-center">
+    <div className="w-full md:w-[60%] bg-white rounded-xl shadow-md overflow-hidden flex flex-col gap-5 items-center">
       <Header />
-      <ToDoForm addTodo={addTodo} />
-      <ToDoList todos={todos} setTodos={setTodos} />
-      <p className="font-poppins text-sm italic p-5">
+      <div className="flex flex-col gap-5 w-full p-5 items-center">
+        <ToDoForm addTodo={addTodo} />
+        <ToDoList todos={todos} setTodos={setTodos} />
+      </div>
+      <span className="font-poppins text-sm italic mb-7">
         Nothing worth having comes easy. - Theodore Roosevelt
-      </p>
+      </span>
     </div>
   );
 };

@@ -29,7 +29,7 @@ const ToDoTemplate = () => {
         <ToDoForm addTodo={addTodo} />
         <ToDoList todos={todos} setTodos={setTodos} />
       </div>
-      <span className="font-poppins text-sm italic mb-7">
+      <span className="font-poppins text-sm italic mb-7 mx-5 text-center">
         Nothing worth having comes easy. - Theodore Roosevelt
       </span>
     </div>
